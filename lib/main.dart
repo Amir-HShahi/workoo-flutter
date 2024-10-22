@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workoo_flutter/utility.dart';
+import 'package:workoo_flutter/view/location.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     initializeScreenData(context);
-    return const Placeholder();
+    return const MaterialApp(
+      home: Location(),
+    );
   }
 }
