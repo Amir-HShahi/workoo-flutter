@@ -9,10 +9,7 @@ class CustomizedSearchBox extends StatelessWidget {
       {super.key, required this.hintText, required this.controller});
 
   void removeInputDataHandler() {
-    print(controller.text);
     controller.clear();
-    print('-----------------------------------');
-    print(controller.text);
   }
 
   @override
