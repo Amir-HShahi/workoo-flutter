@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../utility.dart';
 
@@ -47,18 +48,18 @@ class MyAppBar extends StatelessWidget {
           children: [
             SizedBox(width: scaledWidth(16)),
             GestureDetector(
-              onTap: pressBackButtonHandler,
-              child: Image(
-                  image: const AssetImage("assets/app_bar_back_icon.png"),
-                  height: scaledHeight(24)),
-            ),
+                onTap: pressBackButtonHandler,
+                child: SvgPicture.asset(
+                  "assets/back_arrow.svg",
+                  height: scaledHeight(24),
+                )),
             SizedBox(width: scaledWidth(4)),
             isTitleCentered
                 ? Expanded(
-                  child: Center(
+                    child: Center(
                       child: title,
                     ),
-                )
+                  )
                 : title,
             SizedBox(width: scaledWidth(40))
           ],
