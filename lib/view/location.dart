@@ -14,6 +14,7 @@ class Location extends StatefulWidget {
 }
 
 class _LocationState extends State<Location> {
+  List<String> foundLocations = ["Southeastern Properties"];
   void getCurrentLocationHandler() {}
 
   @override
@@ -54,9 +55,53 @@ class _LocationState extends State<Location> {
                 ],
               ),
             ),
-          )
+          ),
+          for (var location in foundLocations) _LocationTile(location: location)
         ],
       ),
+    );
+  }
+}
+
+class _LocationTile extends StatelessWidget {
+  final String location;
+  const _LocationTile({required this.location});
+
+  void setLocation() {}
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        GestureDetector(
+          onTap: setLocation,
+          child: Container(
+            height: scaledHeight(56),
+            width: double.infinity,
+            padding: EdgeInsets.symmetric(
+                vertical: scaledHeight(16), horizontal: scaledWidth(16)),
+            child: Row(
+              children: [
+                SvgPicture.asset("assets/location_logo.svg",
+                    height: scaledHeight(24)),
+                SizedBox(width: scaledWidth(8)),
+                Text(
+                  location,
+                  style: TextStyle(
+                      fontFamily: "roboto",
+                      fontSize: scaledHeight(16),
+                      color: const Color(0xff625B71)),
+                )
+              ],
+            ),
+          ),
+        ),
+        Container(
+          width: double.infinity,
+          color: Colors.black.withOpacity(0.16),
+          height: scaledHeight(1),
+        )
+      ],
     );
   }
 }
