@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workoo_flutter/utility.dart';
 import 'package:workoo_flutter/view/location.dart';
+import 'package:workoo_flutter/view/search_services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     initializeScreenData(context);
     return const MaterialApp(
-      home: Location(),
+      home: SearchServices(),
     );
   }
 }

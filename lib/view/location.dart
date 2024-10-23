@@ -14,6 +14,7 @@ class Location extends StatefulWidget {
 }
 
 class _LocationState extends State<Location> {
+  TextEditingController controller = TextEditingController();
   List<String> foundLocations = ["Southeastern Properties"];
   void getCurrentLocationHandler() {}
 
@@ -33,7 +34,7 @@ class _LocationState extends State<Location> {
         children: [
           CustomizedSearchBox(
               hintText: "Find your location",
-              controller: TextEditingController()),
+              controller: controller),
           GestureDetector(
             onTap: getCurrentLocationHandler,
             child: Container(
