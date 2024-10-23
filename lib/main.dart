@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workoo_flutter/utility.dart';
 import 'package:workoo_flutter/view/location.dart';
+import 'package:workoo_flutter/view/review_and_confirm.dart';
 import 'package:workoo_flutter/view/search_services.dart';
 import 'package:workoo_flutter/view/task_details.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     initializeScreenData(context);
     return const MaterialApp(
-      home: TaskDetails(),
+      home: ReviewAndConfirm(),
     );
   }
 }
