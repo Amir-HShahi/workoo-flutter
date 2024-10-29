@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:workoo/gen/assets.gen.dart';
+import 'gen/assets.gen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

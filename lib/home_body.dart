@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:workoo/home_screen.dart';
-import 'package:workoo/my_tasker_screen.dart';
 import 'package:workoo/profile_screen.dart';
 import 'package:workoo/task_screen.dart';
+
+import 'home_screen.dart';
+import 'my_tasker_screen.dart';
 
 final GlobalKey<ScaffoldState> _key = GlobalKey();
 RxInt selectedPageIndex = 0.obs;

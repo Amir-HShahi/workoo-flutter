@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:workoo_flutter/utility.dart';
+
+import '../../utility.dart';
 
 class CustomizedFloatingButton extends StatelessWidget {
   final String title;

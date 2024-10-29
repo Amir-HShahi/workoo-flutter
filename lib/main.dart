@@ -3,12 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:workoo/splash_screen.dart';
 import 'package:workoo/thems.dart';
-import 'package:get/get.dart';
-import 'package:workoo/splash_screen.dart';
-import 'package:workoo/thems.dart';
-import 'package:workoo_flutter/utility.dart';
-import 'package:workoo_flutter/view/review_and_confirm.dart';
-import 'package:workoo_flutter/view/search_tasker.dart';
+import 'package:workoo/utility.dart';
 
 
 void main() {

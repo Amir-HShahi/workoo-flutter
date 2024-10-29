@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:workoo_flutter/view/components/customized_floating_button.dart';
 
 import '../utility.dart';
 import 'components/customized_app_bar.dart';
+import 'components/customized_floating_button.dart';
 
 class TaskDetails extends StatelessWidget {
   const TaskDetails({super.key});

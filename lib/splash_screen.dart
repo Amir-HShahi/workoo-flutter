@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:workoo/gen/assets.gen.dart';
-import 'package:workoo/home_body.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+import 'gen/assets.gen.dart';
+import 'home_body.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:workoo_flutter/utility.dart';
+
+import '../../utility.dart';
 
 class CustomizedSearchBox extends StatelessWidget {
   final String hintText;
