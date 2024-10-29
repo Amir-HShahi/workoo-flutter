@@ -39,7 +39,8 @@ dependencies:
   flutter_image_slideshow: ^0.1.6
   carousel_slider: ^5.0.0
   get: ^4.6.6
-
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
 
 
 dev_dependencies:
@@ -68,6 +69,8 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -89,6 +92,7 @@ flutter:
           weight: 700
         - asset: assets/fonts/ROBOTO-REGULAR.TTF
           weight: 500
+        - asset: assets/roboto/Roboto-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
