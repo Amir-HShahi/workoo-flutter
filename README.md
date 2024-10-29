@@ -1,6 +1,6 @@
-# workoo_flutter
+# workoo
 
-A flutter app to find someone expert in a field.
+A new Flutter project.
 
 ## Getting Started
 
