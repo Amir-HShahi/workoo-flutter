@@ -16,11 +16,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     initializeScreenData(context);
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
+    return GetMaterialApp(debugShowCheckedModeBanner: false,
       theme: themsData,
-      home:    const SplashScreen(),
-    );
+      home: const SplashScreen(),);
   }
 }
 
