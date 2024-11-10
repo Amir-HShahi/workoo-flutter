@@ -7,7 +7,7 @@ class MyTaskerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("MyTasker"),
+        child: Text("My Tasker"),
       ),
     );
   }
